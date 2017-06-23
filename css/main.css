@@ -382,27 +382,29 @@ textarea {
   padding-left: 50px;
   padding-right: 70px;
   width: 185px;
+  font-size: 16px;
+  line-height: 22px;
 }
 .help__item:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
   width: 32px;
   height: 32px;
   background: url("//placehold.it/32");
-}
-.help__item:last-child:after {
-  display: none;
 }
 .help__item:after {
   content: "";
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 40px;
   width: 1px;
   height: 40px;
   background: #d6dce1;
+}
+.help__item:last-child:after {
+  display: none;
 }
 
 /*==================================
