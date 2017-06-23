@@ -353,6 +353,58 @@ textarea {
   text-decoration: none;
 }
 
+.help {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.help__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4a4a4a;
+  line-height: 70px;
+}
+.help__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.help__item {
+  position: relative;
+  list-style: none;
+  padding-left: 50px;
+  padding-right: 70px;
+  width: 185px;
+}
+.help__item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background: url("//placehold.it/32");
+}
+.help__item:last-child:after {
+  display: none;
+}
+.help__item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 1px;
+  height: 40px;
+  background: #d6dce1;
+}
+
 /*==================================
 =            responsive            =
 ==================================*/

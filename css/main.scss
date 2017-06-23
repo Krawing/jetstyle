@@ -8,6 +8,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 $font__main-light: #4d4d4d;
 $font__main-dark: #464646;
+$font__main-lighter: #4a4a4a;
 $font__main-white: #fff;
 $contacts-dotted: #e8e8e8;
 
@@ -180,6 +181,55 @@ $bg_nav: #7cacd4;
 	}
 }
 
+.help {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	&__title {
+		font-size: 30px;
+		text-transform: uppercase;
+		text-align: center;
+		color: $font__main-lighter;
+		line-height: 70px;
+	}
+	&__list {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item {
+		position: relative;
+		list-style: none;
+		padding-left: 50px;
+		padding-right: 70px;
+		width: 185px;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 32px;
+			height: 32px;
+			background: url("//placehold.it/32");
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 20px;
+			width: 1px;
+			height: 40px;
+			background: #d6dce1;
+		}
+	}
+}
 /*==================================
 =            responsive            =
 ==================================*/
