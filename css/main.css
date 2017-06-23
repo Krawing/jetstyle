@@ -407,6 +407,36 @@ textarea {
   display: none;
 }
 
+.sentence {
+  padding-top: 100px;
+  background: #84c7f1;
+}
+.sentence__title {
+  margin: 0;
+  width: 650px;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+.sentence__block {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 375px;
+  float: left;
+  margin-right: 10px;
+  background: #fff;
+}
+.sentence__block:last-child {
+  margin-right: 0;
+}
+.sentence__title {
+  display: inline-block;
+  padding: 10px;
+}
+
 /*==================================
 =            responsive            =
 ==================================*/

@@ -13,6 +13,7 @@ $font__main-white: #fff;
 $contacts-dotted: #e8e8e8;
 
 $bg_nav: #7cacd4;
+$bg_sentence: #84c7f1;
 
 
 .wrapper {
@@ -230,6 +231,36 @@ $bg_nav: #7cacd4;
 				display: none;
 			}
 		}
+	}
+}
+
+.sentence {
+	padding-top: 100px;
+	background: $bg_sentence;
+	&__title {
+		margin: 0;
+		width: 650px;
+		margin: 0 auto;
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 48px; 
+		text-align: center;
+		color: $font__main-white;
+	}
+	&__block {
+		display: inline-block;
+		vertical-align: bottom;
+		width: 375px;
+		float: left;
+		margin-right: 10px;
+		background: #fff;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__title {
+		display: inline-block;
+		padding: 10px;
 	}
 }
 /*==================================
