@@ -8,7 +8,11 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 $font__contacts-light: #4d4d4d;
 $font__contacts-dark: #464646;
+$font__nav-white: #fff;
 $contacts-dotted: #e8e8e8;
+
+$bg_nav: #7cacd4;
+
 
 .wrapper {
 	width: 1170px;
@@ -69,6 +73,60 @@ $contacts-dotted: #e8e8e8;
 		&:last-child {
 			padding-right: 0;
 		}
+	}
+}
+
+.navigation {
+	background: $bg_nav;
+	&__list {
+		padding: 0;
+		margin: 0;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		list-style: none;
+	}
+	&__link {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 12px;
+		font-weight: bold;
+		color: $font__nav_white;
+		text: {
+			decoration: none;
+			transform: uppercase;
+		}
+		&_wrap {
+			margin-top: 9px;
+			padding: 10px;
+			border: 2px solid $font__nav_white;
+			border-radius: 10px;
+		}
+	}
+}
+
+.cart {
+	margin-top: 20px;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: url("//placehold.it/20");
+	&__count {
+		top: -15px;
+		left: 0;
+		right: 0;
+		position: absolute;
+		width: 20px;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+		color: $font__nav-white;
 	}
 }
 
