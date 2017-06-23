@@ -6,9 +6,9 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 /*=====  End of normalize  ======*/
 
-$font__contacts-light: #4d4d4d;
-$font__contacts-dark: #464646;
-$font__nav-white: #fff;
+$font__main-light: #4d4d4d;
+$font__main-dark: #464646;
+$font__main-white: #fff;
 $contacts-dotted: #e8e8e8;
 
 $bg_nav: #7cacd4;
@@ -23,6 +23,21 @@ $bg_nav: #7cacd4;
 		content: "";
 		display: table;
 		clear: both;
+	}
+}
+
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	color: $font__main-white;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	&_red {
+		padding: 16px 44px 14px;
+		border-radius: 30px;
+		background: #ff5757;
 	}
 }
 
@@ -41,7 +56,7 @@ $bg_nav: #7cacd4;
 		border-bottom: 1px dotted $contacts-dotted;
 	}
 	&__link {
-		color: $font__contacts-dark;
+		color: $font__main-dark;
 		text-decoration: none;
 	}
 	&__search {
@@ -57,21 +72,21 @@ $bg_nav: #7cacd4;
 
 	&__city {
 		font-size: 12px;
-		color: $font__contacts-light;
+		color: $font__main-light;
 	}
 	&__number {
 		font-size: 16px;
 		font-weight: bold;
-		color: $font__contacts-dark;
+		color: $font__main-dark;
 	}
 	&__tel {
 		width: 140px;
 		float: left;
-		padding-top: 35px;
-		padding-bottom: 32px;
-		padding-right: 85px;
+		margin-top: 35px;
+		margin-bottom: 32px;
+		margin-right: 85px;
 		&:last-child {
-			padding-right: 0;
+			margin-right: 0;
 		}
 	}
 }
@@ -97,7 +112,7 @@ $bg_nav: #7cacd4;
 		padding-bottom: 20px;
 		font-size: 12px;
 		font-weight: bold;
-		color: $font__nav_white;
+		color: $font__main_white;
 		text: {
 			decoration: none;
 			transform: uppercase;
@@ -105,7 +120,7 @@ $bg_nav: #7cacd4;
 		&_wrap {
 			margin-top: 9px;
 			padding: 10px;
-			border: 2px solid $font__nav_white;
+			border: 2px solid $font__main_white;
 			border-radius: 10px;
 		}
 	}
@@ -126,7 +141,42 @@ $bg_nav: #7cacd4;
 		font-size: 14px;
 		font-weight: bold;
 		text-align: center;
-		color: $font__nav-white;
+		color: $font__main-white;
+	}
+}
+
+.slider {
+	background: #edf4f9;
+	&__info {
+		float: left;
+		width: 570px;
+	}
+	&__img {
+		margin-top: 80px;
+		margin-bottom: 40px;
+		width: 570px;
+		float: right;
+	}
+	&__title {
+		margin-top: 170px;
+		margin-bottom: 50px;
+		font: {
+			size: 50px;
+			weight: bold;
+		}
+		color: $font__main-dark;
+		text-transform: uppercase;
+	}
+	&__desc {
+		font-size: 18px;
+		padding-right: 150px;
+		margin-bottom: 50px;
+		color: $font__main-dark;
+		letter-spacing: 0.01em;
+	}
+	&__link {
+		color: #66aae5;
+		text-decoration: none;
 	}
 }
 

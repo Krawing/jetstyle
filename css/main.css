@@ -201,6 +201,21 @@ textarea {
   clear: both;
 }
 
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+.btn_red {
+  padding: 16px 44px 14px;
+  border-radius: 30px;
+  background: #ff5757;
+}
+
 .header__logo {
   width: 300px;
   float: left;
@@ -240,12 +255,12 @@ textarea {
 .contacts__tel {
   width: 140px;
   float: left;
-  padding-top: 35px;
-  padding-bottom: 32px;
-  padding-right: 85px;
+  margin-top: 35px;
+  margin-bottom: 32px;
+  margin-right: 85px;
 }
 .contacts__tel:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .navigation {
@@ -303,6 +318,39 @@ textarea {
   font-weight: bold;
   text-align: center;
   color: #fff;
+}
+
+.slider {
+  background: #edf4f9;
+}
+.slider__info {
+  float: left;
+  width: 570px;
+}
+.slider__img {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  width: 570px;
+  float: right;
+}
+.slider__title {
+  margin-top: 170px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #464646;
+  text-transform: uppercase;
+}
+.slider__desc {
+  font-size: 18px;
+  padding-right: 150px;
+  margin-bottom: 50px;
+  color: #464646;
+  letter-spacing: 0.01em;
+}
+.slider__link {
+  color: #66aae5;
+  text-decoration: none;
 }
 
 /*==================================
